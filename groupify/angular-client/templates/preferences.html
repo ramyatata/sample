@@ -1,0 +1,10 @@
+<div class="panel">
+  <h2> Preferences </h2>
+  <label for="mySelect">Choose a student:</label>
+  <select
+    ng-change="$ctrl.handleChange()" 
+    ng-options="student.name for student in $ctrl.students track by student.id"
+    ng-model="$ctrl.selectedStudent">
+  </select>
+  <preference-list ng-if="$ctrl.student" student="$ctrl.student"></preference-list>
+</div>

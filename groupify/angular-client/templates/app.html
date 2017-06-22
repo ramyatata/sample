@@ -1,0 +1,19 @@
+<div>
+  <div class="nav">
+    <span class="logo">groupify!</span>
+    <span 
+      ng-class="$ctrl.view === 'group' ? 'nav-selected' : 'nav-unselected'" 
+      ng-click="$ctrl.changeView('group')"> 
+      Groups 
+    </span> 
+    <span 
+      ng-class="$ctrl.view === 'pref' ? 'nav-selected' : 'nav-unselected'"  
+      ng-click="$ctrl.changeView('pref')"> 
+      Preferences 
+    </span>
+  </div>
+  <div class="main">
+    <preferences class="panel" ng-if="$ctrl.view === 'pref'"></preferences>
+    <groups class="panel" ng-if="$ctrl.view === 'group'"></groups>
+  </div>
+</div>

@@ -5,14 +5,18 @@ import data from './dummy_data.js';
 
 import Groups from './components/Groups.jsx';
 import Preferences from './components/Preferences.jsx';
+import GroupList from './components/GroupList.jsx';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      view: 'group'
+      view: 'group',
+      
     };
   }
+
+
 
   changeView(option) {
     this.setState({
@@ -28,20 +32,20 @@ class App extends React.Component {
           <span className={this.state.view === 'group'
             ? 'nav-selected'
             : 'nav-unselected'}
-            onClick={() => this.changeView('group')}>
+            onClick={() => this.changeView.bind(this)('group')}>
             Groups
           </span>
           <span className={this.state.view === 'pref'
             ? 'nav-selected'
             : 'nav-unselected'}
-            onClick={() => this.changeView('pref')}>
+            onClick={() => this.changeView.bind(this)('pref')}>
             Preferences
           </span>
 
         </div>
         <div className="main">
           {this.state.view === 'group'
-            ? <Groups/>
+            ? <Groups data={data.groups} view={this.state.view}/>
             : <Preferences/>}
         </div>
       </div>

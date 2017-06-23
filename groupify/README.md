@@ -3,7 +3,7 @@
 You will be creating a full-stack application to help the instruction team at Hack Reactor form Greenfield and Thesis groups. In order to do this you will be using some pre-existing student preference data that you will store in a MySQL database. Your front end will display views created from data in the database. You will have the choice of using either [AngularJS](https://angularjs.org/) or [ReactJS](https://facebook.github.io/react/), and will serve your application with a [NodeJS](https://nodejs.org/) web server, using [ExpressJS](https://expressjs.com/).
 
 NAME WHICH FRONT END FRAMEWORK YOU WILL BE USING FOR THE ASSESSMENT HERE:
-* *[AngularJS or ReactJS]*:
+* *[AngularJS or ReactJS]*: ReactJS
 
 By design, this assessment contains more work than you will be able to complete in a day, so don't be concerned about not completing all of the steps below. Rather, please work on the following steps **in order**, moving on to the next step only after the one you are working on is complete. **Commit frequently** with informative messages. While there are instructions to commit at the end of each step, these should not be your only commits. 
 
